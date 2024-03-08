@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js",
+    "startQuietly": "webpack serve --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"
   },
   "repository": {
