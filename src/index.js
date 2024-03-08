@@ -1,3 +1,8 @@
+/* Next task:
+-  write next tasks for project here, commit messages get buried
+- example task
+*/
+
 // importing CSS directly into the related js file
 import './styles.css'
 
