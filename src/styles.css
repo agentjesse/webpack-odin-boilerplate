@@ -3,7 +3,7 @@ styles; set buttons to display block; set base (pre UA stylesheet) font size; */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
 input, button, textarea, select { font: inherit; }
-button { display: block; }
+button { display: block; cursor: pointer; }
 :root{ font-size: 16px; }  /*chrome default*/
 /* imported google fonts examples */
 /* .roboto { font-family: "Roboto"; font-weight: 400,500; font-style: normal; } */
