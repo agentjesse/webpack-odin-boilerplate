@@ -2,7 +2,7 @@
 import './styles.css'
 
 // module imports, from named and default
-import { logToConsole as log } from "./logger"; //shorthand logger
+import { logToConsole as lg, tableToConsole as tb} from "./logger"; //shorthand loggers
 import { functionOne,functionTwo } from './myModule';
 import myName from './myName'; // 'myName' can be changed here, but not in the source
 
