@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devServer: {
     static: './src',  // guide example: ./dist
     client: {
-      logging: 'none', // Suppress console messages
+      logging: 'warn', // Suppress the standard webpack console messages
     },
     watchFiles: {
       paths: ['src/*.html'], //might be default
