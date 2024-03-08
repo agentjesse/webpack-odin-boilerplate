@@ -1,4 +1,5 @@
-#this is a comment
+#github projects don't need to save dist folders to github for hosting production code, just docs folder
 *.log
+dist/
 node_modules/
 UNUSED_webpack.config.js

@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "Base boilerplate for new projects. Repo is github backup. Created from Odin library project.",
-  "main": "./src/script.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js",
     "startQuietly": "webpack serve --config webpack.dev.js",
-    "build": "webpack --progress --config webpack.prod.js"
+    "build": "webpack --progress --config webpack.prod.js",
+    "buildGithubDocs": "webpack --progress --config webpack.githubDocsProd.js"
   },
   "repository": {
     "type": "git",
