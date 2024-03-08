@@ -1,4 +1,4 @@
-#github projects don't need to save dist folders to github for hosting production code, just docs folder
+#projects don't need dist folders on github for hosting production code, just docs folder
 *.log
 dist/
 node_modules/
