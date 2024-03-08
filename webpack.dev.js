@@ -6,6 +6,9 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     static: './src',  // guide example: ./dist
+    client: {
+      logging: 'none', // Suppress console messages
+    },
     watchFiles: {
       paths: ['src/*.html'], //might be default
       options: {
