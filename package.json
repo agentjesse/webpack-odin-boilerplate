@@ -10,7 +10,8 @@
     "start": "webpack serve --open --config webpack.dev.js",
     "startQ": "webpack serve --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js",
-    "buildGHDocs": "webpack --progress --config webpack.githubDocsProd.js"
+    "buildGHDocs": "webpack --progress --config webpack.githubDocsProd.js",
+    "buildPushDocs": "npm run buildGHDocs && git add . && git commit -m 'quick build' && git push origin main"
   },
   "repository": {
     "type": "git",
