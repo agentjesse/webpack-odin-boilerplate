@@ -4,7 +4,7 @@
 */
 
 // importing CSS directly into the related js file
-import './styles.css'
+import './styles.css';
 
 // module imports, from named and default
 import { logToConsole as lg, tableToConsole as tb} from "./logger"; //shorthand loggers
@@ -19,12 +19,11 @@ console.log( myName('jerry') );
 //source map error test
 //cosnole.log( myName('jerry') );
 
-
 const booksGrid = document.querySelector('.booksGrid');
 const newBookBtn = document.querySelector('#newBookBtn');
 const newBookModal = document.querySelector('#newBookModal');
 const closeModalBtn = document.querySelector('#closeModalBtn');
-const submitBookBtn= document.querySelector('#submitBookBtn');
+const submitBookBtn = document.querySelector('#submitBookBtn');
 const titleInput = document.querySelector('#title');
 const authorInput = document.querySelector('#author');
 const pagesInput = document.querySelector('#pages');
@@ -32,37 +31,36 @@ const readInput = document.querySelector('#read');
 //library that stores book objects will be an array
 const myLibrary = [
   {
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "pages": 277,
-    "read": false
+    title: "The Catcher in the Rye",
+    author: "J.D. Salinger",
+    pages: 277,
+    read: false
   },
   {
-    "title": "Lord of the Flies",
-    "author": "William Golding",
-    "pages": 224,
-    "read": false
+    title: "Lord of the Flies",
+    author: "William Golding",
+    pages: 224,
+    read: false
   },
   {
-    "title": "Fahrenheit 451",
-    "author": "Ray Bradbury",
-    "pages": 249,
-    "read": false
+    title: "Fahrenheit 451",
+    author: "Ray Bradbury",
+    pages: 249,
+    read: false
   },
   {
-    "title": "Animal Farm",
-    "author": "George Orwell",
-    "pages": 112,
-    "read": false
+    title: "Animal Farm",
+    author: "George Orwell",
+    pages: 112,
+    read: false
   },
   {
-    "title": "Brave New World",
-    "author": "Aldous Huxley",
-    "pages": 311,
-    "read": false
+    title: "Brave New World",
+    author: "Aldous Huxley",
+    pages: 311,
+    read: false
   }
 ];
-
 
 //book objects constructor
 function Book(title, author, pages, read) {
@@ -74,7 +72,7 @@ function Book(title, author, pages, read) {
 //Book object methods on the shared prototype object. not using arrow functions for the this value
 Book.prototype.changeReadState = function () {
   this.read = this.read ? false : true;
-}
+};
 
 //create a book, add to library array
 function addBookToLibrary(title, author, pages, read) {
@@ -98,7 +96,7 @@ const updateBooksGrid = ()=> {
     const pagesPara = document.createElement('p');
     const readLabel = document.createElement('label');
     const readInput = document.createElement('input');
-    //add wrapper for book removal icon here, and edit any associated parent child finding logic later 
+    //wrapper for book removal icon. edit any associated parent child finding logic later
     const removeWrapper = document.createElement('div');
     const removeBookIcon = document.createElement('div');
     //add html elements data
@@ -110,14 +108,14 @@ const updateBooksGrid = ()=> {
     readInput.checked = item.read ? true : false;
     bookElem.classList.add('book'); //styling class
     removeWrapper.classList.add('removeWrapper'); //styling class
-    removeBookIcon.setAttribute('data-arr-i',`${index}`)
+    removeBookIcon.setAttribute('data-arr-i',`${index}`);
     //append to parents
     readLabel.append(readInput);
     removeWrapper.append(removeBookIcon);
     bookElem.append(h3, h4, pagesPara, readLabel, removeWrapper);
     booksGrid.append(bookElem);
   });
-}
+};
 updateBooksGrid(); //first run to populate page
 
 //event listeners
@@ -133,7 +131,8 @@ closeModalBtn.addEventListener('click', e=> {
 });
 submitBookBtn.addEventListener('click', e=> {
   e.stopPropagation();
-  if ( titleInput.checkValidity() && authorInput.checkValidity() ) { //check at least title and author inputs filled
+  //check at least title and author inputs filled
+  if ( titleInput.checkValidity() && authorInput.checkValidity() ) {
     //use data for new book with the odin required addBookToLibrary fn
     addBookToLibrary(titleInput.value, authorInput.value, pagesInput.value, readInput.checked);
     updateBooksGrid();
@@ -144,12 +143,12 @@ submitBookBtn.addEventListener('click', e=> {
 booksGrid.addEventListener('click', e=> {
   e.stopPropagation();
   //if book removal div element is clicked
-  if ( e.target.dataset.arrI ){ 
-    myLibrary.splice(e.target.dataset.arrI,1)
+  if ( e.target.dataset.arrI ) {
+    myLibrary.splice(e.target.dataset.arrI,1);
     updateBooksGrid();
   }
   //if change read state CHECKBOX clicked
-  if (e.target.type === 'checkbox'){ //event bubbles to booksGrid,just match the checkbox input
+  if (e.target.type === 'checkbox') { //event bubbles to booksGrid,just match the checkbox input
     myLibrary[+e.target.parentElement.nextElementSibling.children['0'].dataset.arrI].changeReadState(); //div with data-* attr is next element after
   }
 });
