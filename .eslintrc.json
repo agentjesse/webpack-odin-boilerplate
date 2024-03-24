@@ -21,6 +21,7 @@
         "no-shadow":"warn",
         "comma-dangle":"off",
         "no-unneeded-ternary":"warn",
-        "default-case":"off"
+        "default-case":"off",
+        "padded-blocks":"off"
     }
 }
