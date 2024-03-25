@@ -16,6 +16,7 @@
         "spaced-comment":"off",
         "space-in-parens":"off",
         "no-unused-vars":"warn",
+        "no-unused-expressions":"warn",
         "no-param-reassign":"off",
         "no-plusplus":"off",
         "no-shadow":"warn",
