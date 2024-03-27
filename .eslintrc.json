@@ -23,6 +23,7 @@
         "comma-dangle":"off",
         "no-unneeded-ternary":"warn",
         "default-case":"off",
-        "padded-blocks":"off"
+        "padded-blocks":"off",
+        "consistent-return":"off"
     }
 }

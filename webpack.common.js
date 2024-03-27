@@ -8,9 +8,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin( {
       template: './src/index.html',
-      filename: 'index.html',  //default output file name
-      inject: 'head',  //default when scriptLoading is too
-      scriptLoading: 'defer',  //default
+      filename: 'index.html', //default output file name
+      inject: 'head', //default when scriptLoading is too
+      scriptLoading: 'defer', //default
     } ),
   ],
   output: {
