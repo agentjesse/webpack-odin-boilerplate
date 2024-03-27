@@ -24,6 +24,7 @@
         "no-unneeded-ternary":"warn",
         "default-case":"off",
         "padded-blocks":"off",
-        "consistent-return":"off"
+        "consistent-return":"off",
+        "template-curly-spacing":"off"
     }
 }

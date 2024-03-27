@@ -3,12 +3,10 @@
 - example task
 */
 
-// importing CSS directly into the related js file
+// JS/CSS imports
 import './styles.css';
-
-// module imports, from named and default
-import { logToConsole as lg, tableToConsole as tb} from "./logger"; //shorthand loggers
-import { functionOne,functionTwo } from './myModule';
+import { logToConsole as lg, tableToConsole as tb } from './logger'; //shorthand loggers
+import { functionOne, functionTwo } from './myModule';
 import myName from './myName'; // 'myName' can be changed here, but not in the source
 
 //modules import testing
