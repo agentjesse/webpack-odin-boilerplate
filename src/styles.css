@@ -11,6 +11,22 @@ button { display: block; cursor: pointer; }
 :root{
   --grey1: hsl(214 48% 82%);
   --grey2: hsl(214 32% 91%);
+
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --transparent: hsl(0, 0%, 0%, 0);
+  /* tailwind blue palette based, then hue shifted */
+  --bg950: hsl(199, 91%, 9%);
+  --bg900: hsl(197, 86%, 16%);
+  --bg800: hsl(196, 88%, 20%);
+  --bg700: hsl(196, 94%, 24%);
+  --bg600: hsl(194, 94%, 30%);
+  --mg500: hsl(193, 84%, 39%);
+  --fg400: hsl(191, 64%, 52%);
+  --fg300: hsl(189, 72%, 67%);
+  --fg200: hsl(185, 76%, 80%);
+  --fg100: hsl(182, 80%, 90%);
+  --fg50:  hsl(185, 81%, 96%);
 }
 
 /* main CSS */
