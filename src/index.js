@@ -5,6 +5,7 @@
 
 // JS/CSS imports
 import './styles.css';
+import './assets/book-remove.svg'; //not used, just example
 import { logToConsole as lg, tableToConsole as tb } from './logger'; //shorthand loggers
 import { functionOne, functionTwo } from './myModule';
 import myName from './myName'; // 'myName' can be changed here, but not in the source
