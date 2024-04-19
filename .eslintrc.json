@@ -1,21 +1,26 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "node": true,
+        "es2021": true,
+        "jest/globals": true
     },
     "extends": "airbnb-base",
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "plugins": ["jest"],
     "rules": {
+        "import/extensions": "off",
         "max-len":"warn",
         "no-console":"off",
         "arrow-spacing":"off",
-        "arrow-parens":"off",
+        "computed-property-spacing":"off",
         "spaced-comment":"off",
         "space-in-parens":"off",
         "no-unused-vars":"warn",
+        "one-var":"warn",
         "no-unused-expressions":"warn",
         "no-param-reassign":"off",
         "no-plusplus":"off",
