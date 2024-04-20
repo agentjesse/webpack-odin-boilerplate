@@ -13,7 +13,7 @@
     "startQ": "webpack serve --config webpack.dev.cjs",
     "build": "webpack --progress --config webpack.prod.cjs",
     "buildGHDocs": "webpack --progress --config webpack.githubDocsProd.cjs",
-    "buildPushDocs": "npm run buildGHDocs && git add . && git commit -m 'quick build' && git push origin main"
+    "buildPushDocs": "npm run buildGHDocs && git add . && git commit -m 'build: github docs host folder' && git push origin main"
   },
   "repository": {
     "type": "git",
