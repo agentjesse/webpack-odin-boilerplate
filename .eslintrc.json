@@ -16,7 +16,8 @@
         "max-len":"warn",
         "no-console":"off",
         "arrow-spacing":"off",
-        "computed-property-spacing":"off",
+        "template-curly-spacing":"off",
+        "computed-property-spacing":"warn",
         "spaced-comment":"off",
         "space-in-parens":"off",
         "no-unused-vars":"warn",
@@ -27,9 +28,15 @@
         "no-shadow":"warn",
         "comma-dangle":"off",
         "no-unneeded-ternary":"warn",
-        "default-case":"off",
+        "default-case":"warn",
         "padded-blocks":"off",
         "consistent-return":"off",
-        "template-curly-spacing":"off"
+        "import/prefer-default-export":"warn",
+        "default-case":"off",
+        "no-underscore-dangle":"off",
+        "computed-property-spacing":"off",
+        "prefer-destructuring":"warn",
+        "no-use-before-define":"warn",
+        "no-return-assign":"warn"
     }
 }

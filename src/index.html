@@ -12,39 +12,46 @@
 </head>
 <body>
 
-  <h1>Library Odin Project (stage 1)</h1>
+  <h1>Battleship Odin Project</h1>
 
-  <button id='newBookBtn' type="button">NEW BOOK</button>
+  <div id="passDeviceDiv"><span>Please pass device to next player...</span>
+    <button id="continueBtn">...then click here to continue</button>
+  </div>
 
-  <dialog id='newBookModal'>
-    <form method="dialog">
+  <div id="boardsAndLabelsDiv">
 
-      <label>Title:
-        <input type="text" id="title" placeholder="Different Ways To Eat Carrots" required>
-      </label>
-      <label>Author:
-        <input type="text" id="author" placeholder="Jerry Smith" required>
-      </label>
-      <label>Pages:
-        <input type="number" id="pages" placeholder="9999">
-      </label>
-      <label>Read?:
-        <input type="checkbox" id="read">
-      </label>
+    <span class="hideMe">Receiving Board</span>
+    <span class="hideMe">Attacking Board</span>
 
-      <div class="formBtns">
-        <button id='closeModalBtn' >Close</button>
-        <button id='submitBookBtn' >Submit</button>
-      </div>
+    <div id="playerBoardsWrap">
+      <div class="receivingBoardDiv"></div>
+      <div class="attackingBoardDiv"></div>
+    </div>
+    
+  </div>
+  
+  <div class="shipOverlayDiv"></div>
 
-    </form>
-  </dialog>
+  <div id="msgDiv">Let's play battleship!</div>
+  
+  <div class="setupControlsWrap">
+    <div class="btnsWrap clearable">
+      <span>① Pick game mode:</span>
+      <button id="playOtherPlayerBtn">Battle Other Player</button>
+      <button id="playComputerBtn">Battle Computer</button>
+    </div>
+    <div class="btnsWrap">
+      <span></span>
+      <button id="startBtn" disabled>Start</button>
+      <button id="restartBtn" disabled>Restart</button>
+    </div>
+  </div>
 
-  <section class="booksGrid"></section>
+  
 
   <noscript>
     <div class="noscript-warning">
-      This site requires JavaScript to function properly. Please enable JavaScript in your browser settings.
+      This site uses JavaScript. Please enable it in your browser settings.
     </div>
   </noscript>
 

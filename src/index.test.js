@@ -1,13 +1,7 @@
-// eslint-disable-next-line object-curly-newline
-import { sum } from './index.js';
-/* this test works, just hiding it.
+// import {  } from './index.js'; //uncomment and use this file once you learn UI mocking for jest
+import { logToConsole as lg, objectToString as ots, log2DStringArray } from './logger.js';
+
 test('use jsdom in this test file', () => {
   const element = document.createElement('div');
   expect(element).not.toBeNull();
 });
-*/
-test.only('adds 1 + 2 to equal 3 and not 999', () => {
-  //matcher for exact equality (Object.is)
-  expect(sum(1, 2)).toBe(3);
-});
-

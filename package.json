@@ -3,17 +3,17 @@
   "version": "1.0.1",
   "type": "module",
   "private": true,
-  "description": "Base boilerplate for new projects. Created from Odin library project.",
+  "description": "Base boilerplate for new projects. Created from Odin battleship project.",
   "main": "./src/index.js",
   "scripts": {
-    "test": "jest",
-    "watch": "jest --watch",
+    "test": "node --no-deprecation ./node_modules/.bin/jest",
+    "watch": "node --no-deprecation ./node_modules/.bin/jest --watch",
     "webpackWatch": "webpack --watch --config webpack.prod.cjs",
     "start": "webpack serve --open --config webpack.dev.cjs",
     "startQ": "webpack serve --config webpack.dev.cjs",
     "build": "webpack --progress --config webpack.prod.cjs",
     "buildGHDocs": "webpack --progress --config webpack.githubDocsProd.cjs",
-    "buildPushDocs": "npm run buildGHDocs && git add . && git commit -m 'quick build' && git push origin main"
+    "buildPushDocs": "npm run buildGHDocs && git add . && git commit -m 'build: Github Docs hosting folder' && git push origin main"
   },
   "repository": {
     "type": "git",
